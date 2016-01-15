@@ -31,21 +31,21 @@ public class Main implements IXposedHookLoadPackage {
     private XC_MethodHook mOperatorCodeHook = new XC_MethodReplacement() {
         @Override
         protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-            return "310030";
+            return "44010";
         }
     };
 
     private XC_MethodHook mCountryISOHook = new XC_MethodReplacement() {
         @Override
         protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-            return "us";
+            return "jp";
         }
     };
 
     private XC_MethodHook mOperatorNameHook = new XC_MethodReplacement() {
         @Override
         protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-            return "Centennial";
+            return "NTT DoCoMo";
         }
     };
 }
